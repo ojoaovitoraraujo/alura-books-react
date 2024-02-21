@@ -1,21 +1,31 @@
 
 import profile from '../../images/perfil.svg';
 import bag from '../../images/sacola.svg';
-import './style.css'
+import styled from 'styled-components';
+
+const IconContainer = styled.li`
+    margin-right: 40px;
+    width: 25px;
+    list-style: none;
+`
+
+const IconHeader = styled.ul`
+    display: flex;
+    align-items: center;
+`
 
 const icons = [profile, bag];
+
 function Icons(){
     return(
         <div>
-            <ul className='icons'>
+            <IconContainer>
             {
                 icons.map((icon) => (
-                    <li className='icon'>
-                        <img src={icon} alt={icon} />
-                    </li>
+                    <IconHeader><img src={icon} alt={icon} /></IconHeader>
                 ))
             }
-            </ul>
+            </IconContainer>
         </div>
     )
 }
