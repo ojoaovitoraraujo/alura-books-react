@@ -5,7 +5,8 @@ import {books} from './SearchData';
 
 const SearcherContainer = styled.section`
     padding: 20px;
-    color: #fff;
+    color: #fff;    
+    background-image: linear-gradient(90deg, #002F52 35%, #326589);
 `
 const Titulo = styled.h2`
     color:  #FFF;

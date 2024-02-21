@@ -7,6 +7,7 @@ const IconContainer = styled.li`
     margin-right: 40px;
     width: 25px;
     list-style: none;
+    display: flex;
 `
 
 const IconHeader = styled.ul`
