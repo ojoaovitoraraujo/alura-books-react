@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 const Input = styled.input`
-    padding: 0.7rem;
+    padding: 1rem;
     background: #fff;
     border: none;
     border-radius: 5px;
-    width: 15rem;
+    width: 50rem;
 
     &::placeholder {
       color: #c1c1c1;

@@ -1,6 +1,7 @@
 import Header from './components/Header/index.js';
 import Searcher from './components/Searcher/index.js';
 import LastedReleases from './components/LastedReleases/index.js';
+import Footer from './components/Footer/index.js';
 import styled from 'styled-components';
 
 const AppContainer = styled.div`
@@ -18,6 +19,7 @@ function App() {
       <Header />
       <Searcher/>
       <LastedReleases/>
+      <Footer />
     </AppContainer>
   );
 }

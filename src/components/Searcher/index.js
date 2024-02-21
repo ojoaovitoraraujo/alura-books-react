@@ -7,18 +7,20 @@ const SearcherContainer = styled.section`
     padding: 20px;
     color: #fff;    
     background-image: linear-gradient(90deg, #002F52 35%, #326589);
+    text-align: center;
 `
 const Titulo = styled.h2`
     color:  #FFF;
-    font-size: 1.5rem;
+    font-size: 3rem;
+    margin: 0 0;
 `
 const Subtitulo = styled.h3`
     color:  #FFF;
     font-size: 1.2rem;
-    margin-bottom: 20px;
 `
 const SearchResultContainer = styled.div`
     display: flex;
+    justify-content: center;
 `
 const SearchResult = styled.div`
     margin: 2rem;
