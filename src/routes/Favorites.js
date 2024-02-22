@@ -1,6 +1,7 @@
 import Searcher from '../components/Searcher/index.js';
 import Footer from '../components/Footer/index.js';
 import styled from 'styled-components';
+import FavoritesSection from '../components/FavoritesSection/index.js'
 
 const AppContainer = styled.div`
   width: 100vw;
@@ -15,6 +16,8 @@ function Favorites() {
   return (
     <AppContainer>
       <Searcher/>
+
+      <FavoritesSection />
       
       <Footer />
     </AppContainer>
