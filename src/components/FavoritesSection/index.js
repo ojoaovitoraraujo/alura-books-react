@@ -3,6 +3,12 @@ import {Title} from '../Title';
 import { useEffect, useState } from "react";
 import { getFavoriteBooks } from "../../services/favorites";
 
+
+export async function fetchFavoriteBooks(setFavoriteBooks){
+    const favoriteBooksAPI = await getFavoriteBooks()
+    setFavoriteBooks(favoriteBooksAPI)
+}
+
 const LastedReleasesContainer = styled.section`
     display: flex;
     margin: 2rem
@@ -26,14 +32,8 @@ function FavoritesSection(){
     const [favoriteBooks, setFavoriteBooks] = useState([])
 
     useEffect(() => {
-        fetchFavoriteBooks()
-    }, [])
-
-    async function fetchFavoriteBooks(){
-        const favoriteBooksAPI = await getFavoriteBooks()
-        console.log(favoriteBooksAPI)
-        setFavoriteBooks(favoriteBooksAPI)
-    }
+        fetchFavoriteBooks(setFavoriteBooks)
+    }, [setFavoriteBooks])
 
     return (
         <div> 
@@ -52,4 +52,5 @@ function FavoritesSection(){
         </div>
     )
 }
+
 export default FavoritesSection;
